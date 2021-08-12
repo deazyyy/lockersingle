@@ -28,6 +28,24 @@ section.container {
   margin-bottom: 50px;
 }
 
+.gradient-border {
+  background: linear-gradient(to right, #3345f5 0%, #3bc9f5 100%) !important;
+  border-radius: 50px;
+  padding: 14px;
+  position: relative;
+  z-index: 1;
+}
+.gradient-border::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+ border-radius: 50px;
+  background-color: #273f59;
+  z-index: -1;
+}
 
 .gradient-text {
     background: linear-gradient(to right, #f74541 0%, #f7c347 25%, #f74541 50%, #f7c347 75%, #f74541 100%);

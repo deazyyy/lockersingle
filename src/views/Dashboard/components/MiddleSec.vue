@@ -146,7 +146,16 @@ export default {
   width: auto;
   display: block;
   margin: auto;
-  margin-top: -100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
+  
+}
+.colinner {
+margin-top: 0px;
+height: 100%;
+padding-top: 80px;
 }
 
 
@@ -160,6 +169,23 @@ export default {
 }
 .rowOuter:hover > *:hover img{
   opacity: 1;
+}
+@media screen and (max-width: 1550px) {
+  .cols{
+    max-width: 400px;
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .cols{
+    max-width: 350px;
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .rightimg, .leftimg{
+ height: 60%;
+}
 }
 @media screen and (max-width: 1070px) {
   .rowOuter{

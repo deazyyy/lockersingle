@@ -5,6 +5,39 @@
   <nav  >
     <img src="@/assets/logon.png" alt="Logo" class="logo" />
     <div class="left">
+      <div class="dropdown dropdowndapp">
+        <div class="dropdowndappham" type="button" data-toggle="dropdown">
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <ul class="dropdown-menu gradient-border">
+          <div class="dpinner">
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d1.png" alt="Logo" />
+            </div>
+            LOCKER OF AANAKE
+            </a>
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d2.png" alt="Logo" />
+            </div>
+            OLYMPUS DASHBOARD
+            </a>
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d3.png" alt="Logo" />
+            </div>
+            KRONOS WHEEL
+            </a>
+          </div>
+
+        </ul>
+      </div>
+      <a class="dappbtn">DAPPS</a>
       <div class="icons">
         <div class="val-bg">
           <img src="@/assets/circle.png" alt="Logo" class="logo" />
@@ -36,6 +69,125 @@ export default {
 </script>
 
 <style scoped>
+.dappbtn{
+margin-right:18px;
+color:#848d97 !important;
+font-weight:600;
+cursor:pointer;
+text-decoration:none;
+margin-left: 8px;
+
+}
+.dropdown-menu{
+  background: #081A2E;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: unset;
+  width: auto;
+ text-align: center;
+  margin-top: 20px;
+  
+  font-size: 14px;
+      left: -300% !important;
+          z-index: 10;
+}
+.dpinner{
+display: flex;
+  align-items: flex-start;
+}
+.dpinner a{
+      white-space: nowrap;
+  margin: 0 6px;
+}
+
+.drimg{
+  padding: 8px;
+  border-radius: 12px;
+  background: #23354b;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.drimg img{
+  height: 100%;
+  width: auto;
+  transform: translateY(14px);
+  transition: all 0.6s ease;
+}
+.dpinner a:hover img{
+  transform: translateY(0);
+}
+.dropdowndapp{
+ margin-right: 0px;
+}
+.dropdown-menu li{
+  padding: 2px 0;
+}
+.dropdown-menu a{
+  color: #fff !important;
+}
+
+
+.dropdowndapp .gradient-border{
+  border-radius: 16px;
+  background: linear-gradient(0deg, #3345f5 0%, #3bc9f5 100%) !important;
+}
+
+.dropdowndapp .gradient-border:before{
+  border-radius: 16px;
+  background-color: #07192d;
+}
+
+.dropdowndapp .dropdowndappham{
+  color:#848d97 ;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.dropdowndapp .hamburger{
+  margin-right: 8px;
+}
+.hamburger .line{
+  width: 30px;
+  height: 3px;
+  background-color: #babfc5;
+  display: block;
+  margin: 6px auto;
+  border-radius: 6px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+.hamburger:hover{
+  cursor: pointer;
+}
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -123,6 +275,14 @@ nav .logo {
   .socialIcons {
     display: none;
   }
+
+  .dpinner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .dpinner a{
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 650px) {
   .val-bg {
@@ -140,6 +300,9 @@ nav .logo {
     max-height: unset;
     width: 60%;
     height: auto;
+  }
+  .dropdown-menu{
+    left: -150% !important;
   }
 }
 </style>
