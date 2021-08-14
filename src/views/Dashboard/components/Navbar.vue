@@ -13,13 +13,14 @@
             <span class="line"></span>
           </div>
         </div>
-        <ul class="dropdown-menu gradient-border">
+        <ul class="dropdown-menu">
+          <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
           <div class="dpinner">
             <a href="#">
             <div class="drimg">
               <img src="@/assets/d1.png" alt="Logo" />
             </div>
-            LOCKER OF AANAKE
+            LOCKER OF ANANKE
             </a>
             <a href="#">
             <div class="drimg">
@@ -31,7 +32,8 @@
             <div class="drimg">
               <img src="@/assets/d3.png" alt="Logo" />
             </div>
-            KRONOS WHEEL
+            WHEEL OF KRONOS <br/>
+            (Coming Soon)
             </a>
           </div>
 
@@ -85,8 +87,8 @@ margin-left: 8px;
   max-width: unset;
   width: auto;
  text-align: center;
-  margin-top: 20px;
-  
+  margin-top: 30px;
+  border:  3px solid #49586b;  
   font-size: 14px;
       left: -300% !important;
           z-index: 10;
@@ -98,6 +100,7 @@ display: flex;
 .dpinner a{
       white-space: nowrap;
   margin: 0 6px;
+      width: 160px;
 }
 
 .drimg{
@@ -115,11 +118,11 @@ display: flex;
 .drimg img{
   height: 100%;
   width: auto;
-  transform: translateY(14px);
-  transition: all 0.6s ease;
+  /* transform: translateY(14px); */
+  transition: all 0.3s ease-in-out;
 }
 .dpinner a:hover img{
-  transform: translateY(0);
+  transform: scale(1.1);
 }
 .dropdowndapp{
  margin-right: 0px;

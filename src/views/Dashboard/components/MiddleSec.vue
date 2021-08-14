@@ -114,6 +114,7 @@ export default {
 .rightimg, .leftimg{
   opacity: 0.5;
       z-index: -2;
+      pointer-events: none;
 }
 .heading{
   text-align: center;
