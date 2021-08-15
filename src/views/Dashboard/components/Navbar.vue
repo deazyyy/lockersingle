@@ -1,61 +1,69 @@
 <template>
-<div class="wow fadeInDown"
-        data-wow-duration="0.6s"
-        data-wow-delay="0.5s">
-  <nav  >
-    <img src="@/assets/logon.png" alt="Logo" class="logo" />
-    <div class="left">
-      <div class="dropdown dropdowndapp">
-        <div class="dropdowndappham" type="button" data-toggle="dropdown">
-          <div class="hamburger" id="hamburger-1">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+  <div class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s">
+    <nav>
+      <img src="@/assets/logon.png" alt="Logo" class="logo" />
+      <div class="left">
+        <div class="dropdown dropdowndapp">
+          <div class="dropdowndappham" type="button" data-toggle="dropdown">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
+          <ul class="dropdown-menu">
+            <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
+            <div class="dpinner">
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d2.png" alt="Logo" />
+                </div>
+                OLYMPUS DASHBOARD
+              </a>
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d1.png" alt="Logo" />
+                </div>
+                LOCKER OF ANANKE
+              </a>
+
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d3.png" alt="Logo" />
+                </div>
+                WHEEL OF KRONOS <br />
+                (Coming Soon)
+              </a>
+            </div>
+          </ul>
         </div>
-        <ul class="dropdown-menu">
-          <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
-          <div class="dpinner">
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d1.png" alt="Logo" />
-            </div>
-            LOCKER OF ANANKE
-            </a>
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d2.png" alt="Logo" />
-            </div>
-            OLYMPUS DASHBOARD
-            </a>
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d3.png" alt="Logo" />
-            </div>
-            WHEEL OF KRONOS <br/>
-            (Coming Soon)
-            </a>
+        <a class="dappbtn">DAPPS</a>
+        <div class="icons">
+          <div class="val-bg">
+            <img src="@/assets/circle.png" alt="Logo" class="logo" />
+            $ 0.00000344265
           </div>
 
-        </ul>
-      </div>
-      <a class="dappbtn">DAPPS</a>
-      <div class="icons">
-        <div class="val-bg">
-          <img src="@/assets/circle.png" alt="Logo" class="logo" />
-          $ 0.00000344265
+          <div class="socialIcons">
+            <a href="https://mobile.twitter.com/olympus_token" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/olympusbsc/?hl=en"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://t.me/OlympusOfficial" target="_blank"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a href="mailto:contact@olympustoken.io" target="_blank"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
         </div>
-
-        <div class="socialIcons">
-          <a href="https://mobile.twitter.com/olympus_token" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/olympusbsc/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://t.me/OlympusOfficial" target="_blank"><i class="fab fa-telegram"></i></a>
-          <a href="mailto:contact@olympustoken.io" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
+        <!-- <Button name="Connect" class="connectBtn"/> -->
       </div>
-      <!-- <Button name="Connect" class="connectBtn"/> -->
-    </div>
-  </nav>
+    </nav>
   </div>
 </template>
 
@@ -71,39 +79,38 @@ export default {
 </script>
 
 <style scoped>
-.dappbtn{
-margin-right:18px;
-color:#848d97 !important;
-font-weight:600;
-cursor:pointer;
-text-decoration:none;
-margin-left: 8px;
-
+.dappbtn {
+  margin-right: 18px;
+  color: #848d97 !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 8px;
 }
-.dropdown-menu{
-  background: #081A2E;
+.dropdown-menu {
+  background: #081a2e;
   padding: 20px 30px;
   border-radius: 8px;
   max-width: unset;
   width: auto;
- text-align: center;
+  text-align: center;
   margin-top: 30px;
-  border:  3px solid #49586b;  
+  border: 3px solid #49586b;
   font-size: 14px;
-      left: -300% !important;
-          z-index: 10;
+  left: -300% !important;
+  z-index: 10;
 }
-.dpinner{
-display: flex;
+.dpinner {
+  display: flex;
   align-items: flex-start;
 }
-.dpinner a{
-      white-space: nowrap;
+.dpinner a {
+  white-space: nowrap;
   margin: 0 6px;
-      width: 160px;
+  width: 160px;
 }
 
-.drimg{
+.drimg {
   padding: 8px;
   border-radius: 12px;
   background: #23354b;
@@ -115,81 +122,73 @@ display: flex;
   margin: auto;
   margin-bottom: 12px;
 }
-.drimg img{
+.drimg img {
   height: 100%;
   width: auto;
   /* transform: translateY(14px); */
   transition: all 0.3s ease-in-out;
 }
-.dpinner a:hover img{
+.dpinner a:hover img {
   transform: scale(1.1);
 }
-.dropdowndapp{
- margin-right: 0px;
+.dropdowndapp {
+  margin-right: 0px;
 }
-.dropdown-menu li{
+.dropdown-menu li {
   padding: 2px 0;
 }
-.dropdown-menu a{
+.dropdown-menu a {
   color: #fff !important;
 }
 
-
-.dropdowndapp .gradient-border{
+.dropdowndapp .gradient-border {
   border-radius: 16px;
   background: linear-gradient(0deg, #3345f5 0%, #3bc9f5 100%) !important;
 }
 
-.dropdowndapp .gradient-border:before{
+.dropdowndapp .gradient-border:before {
   border-radius: 16px;
   background-color: #07192d;
 }
 
-.dropdowndapp .dropdowndappham{
-  color:#848d97 ;
+.dropdowndapp .dropdowndappham {
+  color: #848d97;
   display: flex;
   align-items: center;
   font-weight: 700;
 }
 
-.dropdowndapp .hamburger{
+.dropdowndapp .hamburger {
   margin-right: 8px;
 }
-.hamburger .line{
+.hamburger .line {
   width: 30px;
   height: 3px;
   background-color: #babfc5;
   display: block;
   margin: 6px auto;
   border-radius: 6px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-.hamburger:hover{
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
   cursor: pointer;
 }
 
 /* ONE */
 
-#hamburger-1.is-active .line:nth-child(2){
+#hamburger-1.is-active .line:nth-child(2) {
   opacity: 0;
 }
 
-#hamburger-1.is-active .line:nth-child(1){
+#hamburger-1.is-active .line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-#hamburger-1.is-active .line:nth-child(3){
+#hamburger-1.is-active .line:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
-
-
-
-
-
-
-
 
 nav {
   display: flex;
@@ -254,11 +253,11 @@ nav .logo {
   }
   .val-bg {
     font-size: 14px;
-    padding: 3px ;
+    padding: 3px;
     margin-left: 10px;
   }
   .val-bg img {
-        width: auto;
+    width: auto;
     height: 100%;
   }
 }
@@ -272,18 +271,18 @@ nav .logo {
     margin: 0 10px;
   }
   .val-bg img {
-       width: auto;
+    width: auto;
     height: 100%;
   }
   .socialIcons {
     display: none;
   }
 
-  .dpinner{
+  .dpinner {
     flex-direction: column;
     align-items: center;
   }
-  .dpinner a{
+  .dpinner a {
     margin: 10px 0;
   }
 }
@@ -296,15 +295,15 @@ nav .logo {
   }
 }
 @media screen and (max-width: 500px) {
-    nav{
-        padding: 10px 14px;
-    }
+  nav {
+    padding: 10px 14px;
+  }
   nav .logo {
     max-height: unset;
     width: 60%;
     height: auto;
   }
-  .dropdown-menu{
+  .dropdown-menu {
     left: -150% !important;
   }
 }
