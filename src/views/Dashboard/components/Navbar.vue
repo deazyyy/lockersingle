@@ -5,11 +5,12 @@
       <div class="left">
         <div class="dropdown dropdowndapp">
           <div class="dropdowndappham" type="button" data-toggle="dropdown">
-            <div class="hamburger" id="hamburger-1">
+            <!-- <div class="hamburger" id="hamburger-1">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
-            </div>
+            </div> -->
+            <img src="@/assets/dapp_menu.png" alt="Logo" class="dap-img" />
           </div>
           <ul class="dropdown-menu">
             <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
@@ -79,6 +80,9 @@ export default {
 </script>
 
 <style scoped>
+.dap-img {
+  height: 24px;
+}
 .dappbtn {
   margin-right: 18px;
   color: #848d97 !important;
