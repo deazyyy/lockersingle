@@ -104,6 +104,9 @@ export default {
   left: -300% !important;
   z-index: 10;
 }
+.left .dropdown-menu{
+  left: -1000% !important;
+}
 .dpinner {
   display: flex;
   align-items: flex-start;
@@ -289,6 +292,9 @@ nav .logo {
   .dpinner a {
     margin: 10px 0;
   }
+   .left .dropdown-menu{
+    left: -400% !important;
+  }
 }
 @media screen and (max-width: 650px) {
   .val-bg {
@@ -296,6 +302,9 @@ nav .logo {
   }
   nav .logo {
     max-height: 30px;
+  }
+  .left .dropdown-menu{
+    left: -350% !important;
   }
 }
 @media screen and (max-width: 500px) {
